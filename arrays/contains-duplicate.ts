@@ -24,7 +24,7 @@
 // 10^9, you cannot tally it at the 10^9th index because the maximum index is 10^5.
 // If this constraint didn't exist, and if you wanted to do all your work in place, then
 // this would be a viable approach. You just immediately return true when you encounter
-// a tracked value of 2.
+// a tracked value of 1. Runtime would still be O(n).
 function containsDuplicate(values: number[]) {
   if (values.length === 0 || values.length === 1) return false;
 
